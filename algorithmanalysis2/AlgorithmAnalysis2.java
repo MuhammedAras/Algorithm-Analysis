@@ -20,7 +20,6 @@ public class AlgorithmAnalysis2 {
         System.out.println("O(logb)=>"+usAlLogb(5, 3)+"  Adım sayisi:"+step);
                        
     }
-    
     public static int usAlOb(int a,int b){
         
         int us=1;
