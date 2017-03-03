@@ -12,15 +12,15 @@ import javax.sound.midi.Soundbank;
  */
 public class AlgorithmAnalysis2 {
 
-    /**
-     * @param args the command line arguments
-     */
+ 
+    static int step=0;
     public static void main(String[] args) {
         
         System.out.println("O(b)=>"+usAlOb(5,3)+"\n\n");
-        System.out.println("O(logb)=>"+usAlLogb(5, 3));
+        System.out.println("O(logb)=>"+usAlLogb(5, 3)+"  Adım sayisi:"+step);
                        
     }
+    
     public static int usAlOb(int a,int b){
         
         int us=1;
@@ -29,7 +29,9 @@ public class AlgorithmAnalysis2 {
         }
         return us;
     }
-    public static int usAlLogb(int a,int b){
+    
+    public static long usAlLogb(long a,long b){
+        step++;
         if(b==0)
             return 1;
         else if(b==1)
