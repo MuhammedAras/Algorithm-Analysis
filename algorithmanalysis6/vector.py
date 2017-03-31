@@ -26,7 +26,6 @@ def printVec(v_1):
 		if d in v_1.f:
 			print(d,v_1.f(d))
 
---------------
 
 def power_for_x_62(x):
 	x1=x*x
@@ -38,5 +37,4 @@ def power_for_x_62(x):
 	return x5*x4*x3*x2*x1
 y=power_for_x_62(2)
 print(y)
---------------
 
